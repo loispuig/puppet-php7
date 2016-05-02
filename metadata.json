@@ -1,0 +1,13 @@
+{
+	"name": "php7",
+	"version": "0.1.0",
+	"author": "loispuig",
+	"summary": "Configure php7 on Debian",
+	"license": "MIT",
+	"source": "https://github.com/loispuig/puppet-php7",
+	"project_page": null,
+	"issues_url": "https://github.com/loispuig/puppet-php7/issues",
+	"dependencies": [
+		{ "name": "puppetlabs-vcsrepo", "version_requirement": ">= 1.0.0" }
+	]
+}
