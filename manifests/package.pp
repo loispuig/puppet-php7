@@ -193,11 +193,4 @@ class php7::package inherits php7 {
 		ensure => 'latest',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
-
-	file { '/var/www/info.php':
-		content => inline_template('<%= "<?php\nphpinfo();\n" %>'),
-		owner => 'www-data',
-		group => 'www-data',
-		require => File['/var/www'],
-	}
 }
