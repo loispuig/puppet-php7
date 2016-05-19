@@ -193,4 +193,8 @@ class php7::package inherits php7 {
 		ensure => 'latest',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
+
+	File { '/etc/php/7.0/cli/conf.d/20-xdebug.ini':
+		ensure => absent,
+	}
 }
