@@ -4,17 +4,17 @@ class php7::package inherits php7 {
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	} ->
 
-	package { 'libphp7.0-embed':
+	/*package { 'libphp7.0-embed':
 		ensure => '7.0.7*',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
-	} ->
+	} ->*/
 
 	package { 'php7.0':
 		ensure => '7.0.7*',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	} ->
 
-	package { 'php7.0-cgi':
+	/*package { 'php7.0-cgi':
 		ensure => '7.0.7*',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	} ->
@@ -22,22 +22,22 @@ class php7::package inherits php7 {
 	package { 'php7.0-cli':
 		ensure => '7.0.7*',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
-	} ->
+	} ->*/
 
-	package { 'php7.0-common':
+	/*package { 'php7.0-common':
 		ensure => '7.0.7*',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
-	} ->
+	} ->*/
 
 	package { 'php7.0-dev':
 		ensure => '7.0.7*',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	} ->
 
-	package { 'php7.0-fpm':
+	/*package { 'php7.0-fpm':
 		ensure => '7.0.7*',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
-	} ->
+	} ->*/
 
 	package { 'php7.0-gd':
 		ensure => '7.0.7*',
@@ -119,10 +119,10 @@ class php7::package inherits php7 {
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	} ->
 
-	package { 'php7.0-phpdbg':
+	/*package { 'php7.0-phpdbg':
 		ensure => '7.0.7*',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
-	} ->
+	} ->*/
 
 	package { 'php7.0-pspell':
 		ensure => '7.0.7*',
