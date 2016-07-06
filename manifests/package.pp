@@ -5,192 +5,192 @@ class php7::package inherits php7 {
 	}
 
 	package { 'libphp7.0-embed':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-cgi':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-cli':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-common':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-dev':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-fpm':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-gd':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-imap':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-intl':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-json':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-ldap':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-mcrypt':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-curl':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-bz2':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-xmlrpc':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-interbase':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-gmp':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-enchant':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-mysql':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-odbc':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-opcache':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-pgsql':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-phpdbg':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-pspell':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-readline':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-recode':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-sqlite3':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-sybase':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-tid':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-xsl':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-apcu':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-igbinary':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-imagick':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-memcached':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-msgpack':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-redis':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
 	package { 'php7.0-xdebug':
-		ensure => 'latest',
+		ensure => 'installed',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
 
