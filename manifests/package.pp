@@ -1,9 +1,4 @@
 class php7::package inherits php7 {
-	package { 'php7.0-dbg':
-		ensure => 'latest',
-		require => [Apt::Source['dotdeb'], Exec['apt_update']],
-	}
-
 	package { 'libphp7.0-embed':
 		ensure => 'latest',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
@@ -25,6 +20,11 @@ class php7::package inherits php7 {
 	}
 
 	package { 'php7.0-common':
+		ensure => 'latest',
+		require => [Apt::Source['dotdeb'], Exec['apt_update']],
+	}
+
+	package { 'php7.0-dbg':
 		ensure => 'latest',
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	}
