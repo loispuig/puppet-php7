@@ -194,8 +194,46 @@ class php7::package inherits php7 {
 		require => [Apt::Source['dotdeb'], Exec['apt_update']],
 	} ->
 
+	package { 'php7.0-bcmath':
+		ensure => 'installed',
+		require => [Apt::Source['dotdeb'], Exec['apt_update']],
+	} ->
+
+	package { 'php7.0-geoip':
+		ensure => 'installed',
+		require => [Apt::Source['dotdeb'], Exec['apt_update']],
+	} ->
+
+	package { 'php7.0-mbstring':
+		ensure => 'installed',
+		require => [Apt::Source['dotdeb'], Exec['apt_update']],
+	} ->
+
+	package { 'php7.0-ssh2':
+		ensure => 'installed',
+		require => [Apt::Source['dotdeb'], Exec['apt_update']],
+	} ->
+
+	package { 'php7.0-zip':
+		ensure => 'installed',
+		require => [Apt::Source['dotdeb'], Exec['apt_update']],
+	} ->
+
 	file { '/etc/php/7.0/cli/conf.d/20-xdebug.ini':
 		ensure => absent,
 		require => Package['php7.0-xdebug'],
-	}
+	} ->
+
+	exec { 'a2enmod-fpm':
+		path => [ '/bin/', '/sbin/' , '/usr/bin/', '/usr/sbin/', '/usr/local/bin', '/usr/local/sbin' ],
+		command => "a2enmod proxy_fcgi setenvif",
+	} ->
+
+	exec { 'a2enconf-fpm':
+		path => [ '/bin/', '/sbin/' , '/usr/bin/', '/usr/sbin/', '/usr/local/bin', '/usr/local/sbin' ],
+		command => "a2enconf php7.0-fpm",
+		notify  => Class['apache::service'],
+	} ->
+
+	service apache2 restart
 }
