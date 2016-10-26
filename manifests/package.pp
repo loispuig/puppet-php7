@@ -233,7 +233,5 @@ class php7::package inherits php7 {
 		path => [ '/bin/', '/sbin/' , '/usr/bin/', '/usr/sbin/', '/usr/local/bin', '/usr/local/sbin' ],
 		command => "a2enconf php7.0-fpm",
 		notify  => Class['apache::service'],
-	} ->
-
-	service apache2 restart
+	}
 }
